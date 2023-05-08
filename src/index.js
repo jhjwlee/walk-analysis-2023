@@ -208,9 +208,12 @@ async function run() {
 
 async function app() {
   // Gui content will change depending on which model is in the query string.
+  
+  
   const urlParams = new URLSearchParams(window.location.search);
+  urlParams.set('model', 'movenet'); // 기본값 설정
   if (!urlParams.has('model')) {
-  //  alert('Cannot find model in the query string.');
+    //alert('Cannot find model in the query string.');
     return;
   }
 
