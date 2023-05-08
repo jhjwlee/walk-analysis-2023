@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.top-bar {
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.top-bar label,
+.top-bar input,
+.top-bar button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#videofile {
+  flex-grow: 1;
+}
+
+.canvas-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+video {
+  display: none;
+}
+
+.status-container {
+  text-align: center;
+  padding: 20px 0;
+}
